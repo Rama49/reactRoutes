@@ -14,14 +14,13 @@ function App() {
       <Routes>
          <Route path='/' element={<Acceuil/>} />
          <Route path='/Acceuil' element={<Acceuil/>} />
-         <Route Route path='service' element={<Service/>}> 
-            <Route path='Service/Admin' element={<Admin/>} />
-            <Route path='Service/Etat' element={<Etat/>} />
+         <Route Route path='/service' element={<Service/>}> 
+            <Route path='/service/admin' element={<Admin/>} />
+            <Route path='/service/etat' element={<Etat/>} />
         </Route>
-         <Route path='Contacts' element={<Contacts/>} />
+         <Route path='/Contacts' element={<Contacts/>} />
       </Routes>
     </div>
   );
 }
-
 export default App;

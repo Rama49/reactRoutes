@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 
 
 
@@ -16,6 +16,7 @@ export default function Service() {
         <Link to='/Service/Admin' className='me-5 text-decoration-none text-white'>Services Administratives</Link>
         <Link to='/Service/Etat' className='me-5 text-decoration-none text-white'>Services D'etats</Link>
        </nav>
+       <Outlet />
     </div>
   )
 }
