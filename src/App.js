@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Acceuil from './Components/Acceuil/Acceuil';
+import Service from './Components/Service/Service';
+import Admin from './Components/Service/Admin/Admin';
+import Etat from './Components/Service/Etat/Etat';
+import Contacts from './Components/Contacts/Contacts';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+         <Route path='/' element={<Acceuil/>} />
+         <Route path='/Acceuil' element={<Acceuil/>} />
+         <Route Route path='service' element={<Service/>}> 
+            <Route path='Service/Admin' element={<Admin/>} />
+            <Route path='Service/Etat' element={<Etat/>} />
+        </Route>
+         <Route path='Contacts' element={<Contacts/>} />
+      </Routes>
     </div>
   );
 }

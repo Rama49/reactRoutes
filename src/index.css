@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Acceuil{
+  background-image: url(Images/Logo.jpg);
+  height: 100vh;
+  width: 100%;
+}
+.acc{
+  /* padding-top: 100px; */
+  font-size: 100px;
+}
